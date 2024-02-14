@@ -12,7 +12,13 @@
   padding-inline: 40px;
 }
 
-@media (max-width: 768px) {
+.navStart {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+@media (max-width: 840px) {
   .navbar {
     display: none;
   }

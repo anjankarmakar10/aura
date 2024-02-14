@@ -1,0 +1,16 @@
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 840px) {
+  .navlinks {
+    align-items: start;
+    gap: 1rem;
+    font-size: 24px;
+    flex-direction: column;
+    height: fit-content;
+  }
+}

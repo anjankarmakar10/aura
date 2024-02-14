@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import styles from "./Button.module.css";
 
-const Button = ({ children, utline, className, ...rest }) => {
+const Button = ({ children, outline, className, ...rest }) => {
   return (
     <button
       className={clsx(
         styles.button,
-        utline ? styles.outline : styles.primary,
+        outline ? styles.outline : styles.primary,
         className
       )}
       {...rest}

@@ -6,6 +6,10 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: background-color 250ms ease;
+  display: flex;
+  align-items: end;
+  gap: 0.5rem;
+  width: fit-content;
 }
 
 .primary {
@@ -14,7 +18,7 @@
 }
 
 .outline {
-  background-color: #fff;
+  background-color: transparent;
   color: #0e0f11;
   border: 1px solid #0e0f11;
 }
