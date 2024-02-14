@@ -1,0 +1,30 @@
+.button {
+  padding: 14px 44px;
+  font-weight: 500;
+  border-radius: 6.5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: background-color 250ms ease;
+}
+
+.primary {
+  color: #fff;
+  background-color: #0e0f11;
+}
+
+.outline {
+  background-color: #fff;
+  color: #0e0f11;
+  border: 1px solid #0e0f11;
+}
+
+.primary:hover {
+  background-color: #fff;
+  color: #0e0f11;
+}
+
+.outline:hover {
+  color: #fff;
+  background-color: #0e0f11;
+}

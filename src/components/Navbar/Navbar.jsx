@@ -1,3 +1,4 @@
+import { Search } from "lucide-react";
 import Logo from "../Logo/Logo";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import styles from "./Navbar.module.css";
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div>
           <Logo />
         </div>
-        <div>Search</div>
+        <div></div>
       </nav>
       <MobileNavbar />
     </div>

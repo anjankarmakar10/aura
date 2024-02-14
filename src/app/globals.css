@@ -1,6 +1,18 @@
 :root {
 }
 
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
 body {
   height: 200vh;
+  color: #0e0f11;
 }

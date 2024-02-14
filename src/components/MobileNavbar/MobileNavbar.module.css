@@ -3,7 +3,7 @@
   top: 0;
   right: 1rem;
   left: 1rem;
-  display: flex;
+  display: none;
   padding-block: 0.75rem;
   justify-content: space-between;
   align-items: center;
@@ -11,8 +11,8 @@
   z-index: 999;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
-    display: none;
+    display: flex;
   }
 }
