@@ -1,18 +1,17 @@
 .navbar {
   position: fixed;
   top: 0;
-  right: 1rem;
-  left: 1rem;
-  display: flex;
-  padding-block: 0.75rem;
+  right: 2rem;
+  left: 2rem;
+  display: none;
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  z-index: 999;
+  height: 90px;
 }
 
 @media (min-width: 768px) {
   .navbar {
-    display: none;
+    display: flex;
   }
 }
