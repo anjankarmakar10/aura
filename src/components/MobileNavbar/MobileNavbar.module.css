@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  padding-block: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
