@@ -1,5 +1,5 @@
 .container {
-  margin-block: 128px;
+  padding-block: 128px;
 }
 
 .header {
@@ -35,6 +35,8 @@
   text-transform: capitalize;
   color: #5e6875;
   padding-bottom: 6px;
+  padding-inline: 8px;
+  border: none;
 }
 
 .atciveTab {
@@ -42,4 +44,10 @@
   color: #0e0f11;
   font-weight: 500;
   transition: color 400ms ease;
+}
+
+@media (max-width: 640px) {
+  .tablist {
+    justify-content: space-evenly;
+  }
 }
