@@ -8,6 +8,7 @@ import ProductCard from "../ProductCard/ProductCard";
 import useEmblaCarousel from "embla-carousel-react";
 import clsx from "clsx";
 import { useState } from "react";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 const tabitems = ["all", "skincare", "makeup", "body", "hair"];
 
@@ -18,6 +19,9 @@ const TrendingProducts = () => {
   });
 
   const [currentTab, setCurrentTab] = useState(tabitems[0]);
+  const [parent] = useAutoAnimate({
+    easing: "ease-in-out",
+  });
 
   return (
     <Container>
@@ -43,7 +47,10 @@ const TrendingProducts = () => {
           ))}
         </div>
         <div className="embla" ref={emblaRef}>
-          <div className={clsx(styles.cardContainer, "embla__container")}>
+          <div
+            ref={parent}
+            className={clsx(styles.cardContainer, "embla__container")}
+          >
             {products
               .filter((item) =>
                 currentTab === "all" ? item : item.cetagory === currentTab
