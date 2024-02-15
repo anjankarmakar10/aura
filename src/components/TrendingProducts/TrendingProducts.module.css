@@ -50,4 +50,7 @@
   .tablist {
     justify-content: space-evenly;
   }
+  .button {
+    width: 100%;
+  }
 }

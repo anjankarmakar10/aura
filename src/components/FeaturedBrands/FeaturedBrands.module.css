@@ -1,0 +1,77 @@
+.wrapper {
+  padding-block: 64px;
+}
+
+.header {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.wrapper button {
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 48px;
+  grid-template-areas:
+    "a b c c"
+    "d e e f";
+}
+
+.grid div {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.grid img {
+  transition: all 400ms ease;
+  filter: brightness(90%);
+  filter: blur(0.8px);
+}
+
+.grid div:hover img {
+  transform: scale(1.1);
+  filter: brightness(100%);
+  filter: blur(0);
+  transition: all 500ms ease;
+}
+
+.grid1 {
+  grid-area: a;
+}
+.grid2 {
+  grid-area: b;
+}
+.grid3 {
+  grid-area: c;
+}
+.grid4 {
+  grid-area: d;
+}
+.grid5 {
+  grid-area: e;
+}
+.grid6 {
+  grid-area: f;
+}
+
+@media (max-width: 840px) {
+  .grid {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 48px;
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d f"
+      "e e";
+  }
+}
+
+@media (max-width: 640px) {
+  .wrapper button {
+    width: 100%;
+  }
+}

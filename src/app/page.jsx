@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Hero from "@/components/Hero/Hero";
 import TrendingProducts from "@/components/TrendingProducts/TrendingProducts";
 import FeatureBeautyStandard from "@/components/FeatureBeautyStandard/FeatureBeautyStandard";
+import FeaturedBrands from "@/components/FeaturedBrands/FeaturedBrands";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Hero />
       <TrendingProducts />
       <FeatureBeautyDeals />
-      <FeatureBeautyStandard/>
+      <FeaturedBrands />
+      <FeatureBeautyStandard />
     </main>
   );
 }
