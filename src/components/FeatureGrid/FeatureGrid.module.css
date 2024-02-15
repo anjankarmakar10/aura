@@ -1,12 +1,14 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: calc(64px + 24px);
   background: transparent;
+  align-items: center;
 }
 
 @media (max-width: 840px) {
   .wrapper {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 }

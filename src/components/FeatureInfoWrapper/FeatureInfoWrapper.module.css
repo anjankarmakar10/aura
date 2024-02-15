@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper p {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 840px) {
+  .wrapper button {
+    width: 100%;
+  }
+}
