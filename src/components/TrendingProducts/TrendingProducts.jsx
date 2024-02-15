@@ -9,6 +9,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import clsx from "clsx";
 import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
+import SectionHeading from "../SectionHeading/SectionHeading";
 
 const tabitems = ["all", "skincare", "makeup", "body", "hair"];
 
@@ -26,12 +27,12 @@ const TrendingProducts = () => {
   return (
     <Container>
       <section className={styles.container}>
-        <header className={styles.header}>
+        <SectionHeading className={styles.header}>
           <h2>
             Shop Our Trending <br /> Beauty Products
           </h2>
           <p>Explore the latest clean beauty essentials.</p>
-        </header>
+        </SectionHeading>
         <div className={styles.tablist}>
           {tabitems.map((tab) => (
             <button

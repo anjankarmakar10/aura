@@ -1,14 +1,15 @@
 import Button from "../Button/Button";
 import Container from "../Container/Container";
+import SectionHeading from "../SectionHeading/SectionHeading";
 import styles from "./FeaturedBrands.module.css";
 
 const FeaturedBrands = () => {
   return (
     <Container>
       <section className={styles.wrapper}>
-        <header className={styles.header}>
+        <SectionHeading>
           <h2>Featured Brands</h2>
-        </header>
+        </SectionHeading>
         <div className={styles.grid}>
           <div className={styles.grid1}>
             <img src="/brand1.webp" alt="" />
