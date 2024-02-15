@@ -7,12 +7,17 @@ import styles from "./TrendingProducts.module.css";
 import ProductCard from "../ProductCard/ProductCard";
 import useEmblaCarousel from "embla-carousel-react";
 import clsx from "clsx";
+import { useState } from "react";
+
+const tabitems = ["all", "skincare", "makeup", "body", "hair"];
 
 const TrendingProducts = () => {
   const [emblaRef] = useEmblaCarousel({
     dragFree: true,
     containScroll: "trimSnaps",
   });
+
+  const [currentTab, setCurrentTab] = useState(tabitems[0]);
 
   return (
     <Container>
@@ -23,7 +28,20 @@ const TrendingProducts = () => {
           </h2>
           <p>Explore the latest clean beauty essentials.</p>
         </header>
-        <div>Tebmenu</div>
+        <div className={styles.tablist}>
+          {tabitems.map((tab) => (
+            <button
+              onClick={() => setCurrentTab(tab)}
+              key={tab}
+              className={clsx(
+                styles.tab,
+                currentTab === tab && styles.atciveTab
+              )}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
         <div className="embla" ref={emblaRef}>
           <div className={clsx(styles.cardContainer, "embla__container")}>
             {products.map((product) => (

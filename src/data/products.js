@@ -5,6 +5,7 @@ const products = [
     info: "Noni Glow Sleeping Mask",
     price: "48.00",
     image: "/product1.webp",
+    cetagory: "makeup",
   },
   {
     id: crypto.randomUUID(),
@@ -12,6 +13,7 @@ const products = [
     info: "CeraVe Moisturising Cream For Dry To Very Dry Skin",
     price: "18.00",
     image: "/product8.webp",
+    cetagory: "skincare",
   },
   {
     id: crypto.randomUUID(),
@@ -19,13 +21,15 @@ const products = [
     info: "A Winter In Paris",
     price: "48.00",
     image: "/product2.webp",
+    cetagory: "hair",
   },
   {
     id: crypto.randomUUID(),
     name: "goop",
-    info: "g. tox malachite + Fruit Acid Por purifying Cleanser",
+    info: "Fruit Acid Por purifying Cleanser",
     price: "48.00",
     image: "/product3.webp",
+    cetagory: "body",
   },
   {
     id: crypto.randomUUID(),
@@ -33,6 +37,7 @@ const products = [
     info: "Citrus & Citrine Regenerating Toning Mist",
     price: "48.00",
     image: "/product4.webp",
+    cetagory: "skincare",
   },
   {
     id: crypto.randomUUID(),
@@ -40,6 +45,7 @@ const products = [
     info: "Ultra Hydrating Cleanser",
     price: "48.00",
     image: "/product5.webp",
+    cetagory: "makeup",
   },
   {
     id: crypto.randomUUID(),
@@ -47,6 +53,7 @@ const products = [
     info: "Noni Glow Sleeping Mask",
     price: "48.00",
     image: "/product6.webp",
+    cetagory: "hair",
   },
   {
     id: crypto.randomUUID(),
@@ -54,6 +61,7 @@ const products = [
     info: "Noni Glow Sleeping Mask",
     price: "48.00",
     image: "/product7.webp",
+    cetagory: "skincare",
   },
 ];
 

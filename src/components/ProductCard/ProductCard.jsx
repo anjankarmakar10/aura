@@ -11,10 +11,14 @@ const ProductCard = ({ product }) => {
         alt={product.name}
       />
       <div className={styles.cardFooter}>
-        <h6>Kora organics</h6>
+        <h6 title={product.name} className="line-clamp-1">
+          {product.name}
+        </h6>
         <div className={styles.cardInfo}>
-          <p>Noni Glow Sleeping Mask</p>
-          <span>$258</span>
+          <p title={product.info} className="line-clamp-1">
+            {product.info}
+          </p>
+          <span>${product.price}</span>
         </div>
       </div>
     </article>

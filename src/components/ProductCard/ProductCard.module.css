@@ -36,6 +36,10 @@
   text-transform: uppercase;
 }
 
+.cardFooter h6 {
+  text-transform: capitalize;
+}
+
 .cardInfo {
   display: flex;
   justify-content: space-between;
