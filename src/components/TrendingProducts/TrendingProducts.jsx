@@ -44,11 +44,15 @@ const TrendingProducts = () => {
         </div>
         <div className="embla" ref={emblaRef}>
           <div className={clsx(styles.cardContainer, "embla__container")}>
-            {products.map((product) => (
-              <div className="embla__slide" key={product.id}>
-                <ProductCard product={product} />
-              </div>
-            ))}
+            {products
+              .filter((item) =>
+                currentTab === "all" ? item : item.cetagory === currentTab
+              )
+              .map((product) => (
+                <div className="embla__slide" key={product.id}>
+                  <ProductCard product={product} />
+                </div>
+              ))}
           </div>
         </div>
         <Button className={styles.button} outline={true}>
