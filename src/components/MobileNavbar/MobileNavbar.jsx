@@ -8,6 +8,7 @@ import Button from "../Button/Button";
 import { RemoveScroll } from "react-remove-scroll";
 import FocusLock from "react-focus-lock";
 import { useState } from "react";
+import { Searchbar } from "../Searchbar/Searchbar";
 
 const MobileNavbar = () => {
   const [openMenu, setOpenMenu] = useState(false);

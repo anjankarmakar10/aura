@@ -50,6 +50,11 @@
   z-index: 3;
 }
 
+.search {
+  border: 2px solid gray;
+  background: bisque;
+}
+
 .active {
   transform: translateX(0%);
 }

@@ -1,18 +1,15 @@
-import { Scissors, Search } from "lucide-react";
 import Container from "../Container/Container";
 import styles from "./Hero.module.css";
 import Button from "../Button/Button";
 import Image from "next/image";
+import { Searchbar } from "../Searchbar/Searchbar";
 
 const Hero = () => {
   return (
     <div className={styles.wrapper}>
       <section className={styles.hero}>
         <Container>
-          <form class={styles.searchForm}>
-            <input placeholder="What are you looking for?" type="search" />
-            <Search size={18} />
-          </form>
+          <Searchbar />
 
           <div className={styles.grid}>
             <div className={styles.featured}>

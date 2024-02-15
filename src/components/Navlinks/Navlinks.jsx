@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./NavLinks.module.css";
+import { Searchbar } from "../Searchbar/Searchbar";
 const Navlinks = () => {
   return (
     <ul className={styles.navlinks}>
