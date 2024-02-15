@@ -5,6 +5,7 @@ import TrendingProducts from "@/components/TrendingProducts/TrendingProducts";
 import FeatureBeautyStandard from "@/components/FeatureBeautyStandard/FeatureBeautyStandard";
 import FeaturedBrands from "@/components/FeaturedBrands/FeaturedBrands";
 import BudgetSkinCareProducts from "@/components/BudgetSkinCareProducts/BudgetSkinCareProducts";
+import BudgetMakeupProducts from "@/components/BudgetMakeupProducts/BudgetMakeupProducts";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturedBrands />
       <FeatureBeautyStandard />
       <BudgetSkinCareProducts />
+      <BudgetMakeupProducts />
     </main>
   );
 }

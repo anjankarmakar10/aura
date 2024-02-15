@@ -1,16 +1,17 @@
 import products from "@/data/products";
 import Container from "../Container/Container";
 import SectionHeading from "../SectionHeading/SectionHeading";
-import styles from "./BudgetSkinCareProducts.module.css";
+import styles from "./BudgetMakeupProducts.module.css";
 import Button from "../Button/Button";
-import FeaturedProductsContainer from "../FeaturedProductsContainer/FeaturedProductsContainer";
 import ProductCard from "../ProductCard/ProductCard";
-const BudgetSkinCareProducts = () => {
+import FeaturedProductsContainer from "../FeaturedProductsContainer/FeaturedProductsContainer";
+
+const BudgetMakeupProducts = () => {
   return (
     <section className={styles.wrapper}>
       <Container>
         <SectionHeading>
-          <h1>Skincare Under $40</h1>
+          <h1>Makeup Under $20</h1>
         </SectionHeading>
 
         <FeaturedProductsContainer>
@@ -24,4 +25,4 @@ const BudgetSkinCareProducts = () => {
     </section>
   );
 };
-export default BudgetSkinCareProducts;
+export default BudgetMakeupProducts;
