@@ -3,10 +3,11 @@
 import Logo from "../Logo/Logo";
 import MobileNavbar from "../MobileNavbar/MobileNavbar";
 import styles from "./Navbar.module.css";
-import Button from "../Button/Button";
 import Navlinks from "../Navlinks/Navlinks";
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import { ShoppingBag } from "lucide-react";
+import { Searchbar } from "../Searchbar/Searchbar";
 
 const Navbar = () => {
   const [isDown, setIsDown] = useState(false);
@@ -32,7 +33,12 @@ const Navbar = () => {
           <Navlinks />
         </div>
         <div className={styles.navEnd}>
-          <Button outline={true}>Subscribe Now</Button>
+          <Searchbar
+            className={clsx(isDown ? styles.search : styles.serachHide)}
+          />
+          <button>
+            <ShoppingBag />
+          </button>
         </div>
       </nav>
       <MobileNavbar />

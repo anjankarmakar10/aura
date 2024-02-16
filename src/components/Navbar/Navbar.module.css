@@ -33,6 +33,22 @@
   background: transparent;
 }
 
+.navEnd {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.serachHide {
+  display: none !important;
+}
+
+.search {
+  margin-bottom: 0;
+  height: 38px !important;
+  background-color: #f1e2f9 !important;
+}
+
 @media (max-width: 840px) {
   .navbar {
     display: none;
