@@ -14,7 +14,7 @@
 
 .img {
   object-fit: contain;
-  filter: brightness(95%);
+  filter: brightness(98%);
   transition: all 500ms ease;
 }
 
@@ -51,4 +51,18 @@
 .cardInfo span {
   font-weight: 600;
   font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    flex-basis: 320px;
+  }
+  .img {
+    width: 320px !important;
+  }
+
+  .img {
+    object-fit: contain;
+    filter: brightness(100%);
+  }
 }

@@ -1,0 +1,28 @@
+.wrapper {
+  margin-block: 16px;
+}
+
+.wrapper header {
+  color: #838d95;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wrapper ul li,
+.wrapper ul a {
+  color: white;
+  transition: color 300ms ease;
+  text-transform: capitalize;
+}
+
+.wrapper ul a:hover {
+  color: #2f54eb;
+}

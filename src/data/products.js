@@ -9,20 +9,21 @@ const products = [
   },
   {
     id: crypto.randomUUID(),
-    name: "Moisturising Cream",
-    info: "CeraVe Moisturising Cream For Dry To Very Dry Skin",
-    price: "18.00",
-    image: "/product8.webp",
-    cetagory: "skincare",
-  },
-  {
-    id: crypto.randomUUID(),
     name: "odacite",
     info: "A Winter In Paris",
     price: "48.00",
     image: "/product2.webp",
     cetagory: "hair",
   },
+  {
+    id: crypto.randomUUID(),
+    name: "Moisturising Cream",
+    info: "CeraVe Moisturising Cream For Dry To Very Dry Skin",
+    price: "18.00",
+    image: "/product8.webp",
+    cetagory: "skincare",
+  },
+
   {
     id: crypto.randomUUID(),
     name: "goop",
