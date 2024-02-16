@@ -5,3 +5,9 @@
 .wrapper button {
   margin-inline: auto;
 }
+
+@media (max-width: 640px) {
+  .wrapper button {
+    width: 100%;
+  }
+}
