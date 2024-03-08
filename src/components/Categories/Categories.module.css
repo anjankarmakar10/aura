@@ -1,6 +1,9 @@
 .wrapper {
-  padding-block: 128px;
+  padding-block: 64px;
 }
 
 .grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }

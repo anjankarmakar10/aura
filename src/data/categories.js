@@ -48,3 +48,5 @@ const categories = [
     image: "/c8.webp",
   },
 ];
+
+export default categories;

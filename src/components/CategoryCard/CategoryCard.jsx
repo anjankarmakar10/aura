@@ -1,12 +1,12 @@
 import styles from "./CategoryCard.module.css";
 
-const CategoryCard = () => {
+const CategoryCard = ({ category }) => {
   return (
     <article className={styles.card}>
       <div>
-        <img src="/c1.webp" alt="" />
+        <img src={category.image} alt={category.label} />
       </div>
-      <h5>FACIAL CLEANSERS</h5>
+      <h5>{category.label}</h5>
     </article>
   );
 };
