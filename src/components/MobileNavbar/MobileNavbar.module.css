@@ -12,6 +12,10 @@
   z-index: 999;
 }
 
+.searchWrapper {
+  width: 80%;
+}
+
 .menuContent {
   display: flex;
   flex-direction: column;

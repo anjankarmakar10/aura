@@ -24,7 +24,9 @@ const MobileNavbar = () => {
           <div className={clsx(styles.mobileMenu, openMenu && styles.active)}>
             <div className={styles.menuContent}>
               <Navlinks />
-              <Searchbar className={styles.search} />
+              <div className={styles.searchWrapper}>
+                <Searchbar className={styles.search} />
+              </div>
               <Button onClick={() => setOpenMenu(false)} outline={true}>
                 <X />
                 Dismiss
