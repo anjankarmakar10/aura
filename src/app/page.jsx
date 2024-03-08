@@ -7,11 +7,13 @@ import FeaturedBrands from "@/components/FeaturedBrands/FeaturedBrands";
 import BudgetSkinCareProducts from "@/components/BudgetSkinCareProducts/BudgetSkinCareProducts";
 import BudgetMakeupProducts from "@/components/BudgetMakeupProducts/BudgetMakeupProducts";
 import Influencers from "@/components/Influencers/Influencers";
+import Categories from "@/components/Categories/Categories";
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      <Categories />
       <TrendingProducts />
       <FeatureBeautyDeals />
       <FeaturedBrands />
